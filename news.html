@@ -34,7 +34,18 @@
 					<p>Do you know a future graduate taking on all the stresses of taking those next steps, and who’d like to participate? Contact us and let us know!</p>
 					<p>Also with May, comes Vappu, and the controversial parties that comes with it. Where do you stand as a shareholder? Is Vappu a time-honored tradition, or a source of frustration in the form of endless noise and property damage? We’d like to hold a positive discussion of advice for how to celebrate without annoying everyone around you.</p>
 					<hr/>
-					<p>#Newsletter #SustainableLiving #TipsandTricks</p>
+					
+				<p>#Newsletter #SustainableLiving #TipsandTricks</p>
+				<div class="center">
+					<hr/><a href="#" id="comment"><b>Leave a Comment</b></a>
+					<form id=hidden>
+						<div class="form-group">
+    						<textarea class="form-control" id="textarea" placeholder="Leave a comment here" rows="10"></textarea>
+						</div>
+						<button type="submit" class="btn btn-primary text-center">Submit</button>
+						<button type="button" class="btn btn-danger text-center" id="close">Close</button><hr/>
+					</form>
+				</div>
 
 				<h2 id="reminders">General Reminders</h2>
 
@@ -60,7 +71,7 @@
 			<div class="col-md-4" id="sidebar">
 				<div class="input-group custom-search w-75 mx-auto">
 					<input type="text" id="myInput" class="form-control custom-search-input" placeholder="Search...">
-					<i class="btn-lg fas fa-search custom-search-botton" type="button" id="mySearch"></i>
+					<button class="btn-lg custom-search-botton" type="button" id="mySearch"><i class="fas fa-search d-flex align-items-center justify-content-center"></i></button>
 				</div>
 					<div class="center title"><b>Latest Articles</b></div>
 						<ul>
@@ -97,33 +108,6 @@
 		</div>
 	</div>
 <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"></a>
-<script>
-	$(document).ready(function() {
-	
-	$(window).scroll(function() {
-		
-		if ($(this).scrollTop() > 20) {
-			
-			$('#toTopBtn').fadeIn();
-
-		} else {
-			
-			$('#toTopBtn').fadeOut();
-		}
-	});
-
-	$('#toTopBtn').click(function() {
-
-		$("html, body").animate({
-		
-			scrollTop: 0
-
-		}, 1000);
-	
-	return false;
-	
-	});
-});
-</script>
+<script src="omarealia.js"></script>
 </body>
 </html>

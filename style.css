@@ -41,19 +41,8 @@ h4 {
   bottom: 1px;
   z-index: 4;
   border: none;
-  border-radius: 50px;
-}
-
-i.fas {
-  
-  color: black;
-}
-
-@media (max-width: 767px) {
-  .btn {
-    display: block;
-    width: 100%;
-  }
+  border-radius: 0;
+  background-color: white;
 }
 
 

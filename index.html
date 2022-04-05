@@ -70,7 +70,7 @@
 			<div class="col-md-4" id="sidebar">
 				<div class="input-group custom-search w-75 mx-auto">
 					<input type="text" id="myInput" class="form-control custom-search-input" placeholder="Search...">
-					<i class="btn-lg  fas fa-search custom-search-botton" type="button" id="mySearch"></i>
+					<button class="btn-lg custom-search-botton" type="button" id="mySearch"><i class="fas fa-search d-flex align-items-center justify-content-center"></i></button>
 				</div>
 					<div class="center title"><b>Latest Articles</b></div>
 						<ul>
@@ -107,33 +107,6 @@
 		</div>
 	</div>
 <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"></a>
-<script>
-	$(document).ready(function() {
-	
-	$(window).scroll(function() {
-		
-		if ($(this).scrollTop() > 20) {
-			
-			$('#toTopBtn').fadeIn();
-
-		} else {
-			
-			$('#toTopBtn').fadeOut();
-		}
-	});
-
-	$('#toTopBtn').click(function() {
-
-		$("html, body").animate({
-		
-			scrollTop: 0
-
-		}, 1000);
-	
-	return false;
-	
-	});
-});
-</script>
+<script src="omarealia.js"></script>
 </body>
 </html>
