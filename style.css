@@ -42,12 +42,11 @@ h4 {
   z-index: 4;
   border: none;
   border-radius: 50px;
-  display: flex;
-justify-content: space-around;
 }
 
 i.fas {
   
+  vertical-align: middle;
   color: black;
 }
 
