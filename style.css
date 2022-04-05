@@ -46,8 +46,14 @@ h4 {
 
 i.fas {
   
-  vertical-align: middle;
   color: black;
+}
+
+@media (max-width: 767px) {
+  .btn {
+    display: block;
+    width: 100%;
+  }
 }
 
 
