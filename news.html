@@ -40,10 +40,12 @@
 					<hr/><a href="#" id="comment"><b>Leave a Comment</b></a>
 					<form id=hidden>
 						<div class="form-group">
+							<button type="button" class="close" aria-label="Close" id="xbutton"><span aria-hidden="true">&times;</span></button>
     						<textarea class="form-control" id="textarea" placeholder="Leave a comment here" rows="10"></textarea>
 						</div>
-						<button type="submit" class="btn btn-primary text-center">Submit</button>
+						<button type="submit" class="btn btn-primary text-center" id="submit">Submit</button>
 						<button type="button" class="btn btn-danger text-center" id="close">Close</button><hr/>
+						<span id="warning"></span>
 					</form>
 				</div>
 
@@ -109,5 +111,31 @@
 	</div>
 <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"></a>
 <script src="omarealia.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+	$(window).scroll(function() {
+		
+		if ($(this).scrollTop() > 20) {
+			
+			$('#toTopBtn').fadeIn();
+
+		} else {
+			
+			$('#toTopBtn').fadeOut();
+		}
+	});
+
+	$('#toTopBtn').click(function() {
+		$("html, body").animate({
+		
+			scrollTop: 0
+
+		}, 'slow');
+	
+	return false;
+	
+		});
+	});
+</script>
 </body>
 </html>

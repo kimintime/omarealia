@@ -3,6 +3,10 @@ header {
     padding: 10px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h2 {
 
     margin-top: 10px;
